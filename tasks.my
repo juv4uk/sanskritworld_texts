@@ -1,0 +1,13 @@
+; tasks.my — durable task plan for sanskritworld_texts. Same alist
+; shape as sibling repos' tasks.my.
+
+((tasks . (
+  ("SANSKRITWORLD-TEXTS-SHIVA-SUTRAS-PROVENANCE-CROSSCHECK" . (
+    (priority . 5.0)
+    (capabilities . (license provenance documentation))
+    (origin . sanskritworld-texts)
+    (context . "This repo's own NOTICE.md documents the full provenance chain (sanskritdocuments.org / GRETIL / Gaudiya Grantha Mandira -> sanskritworld.in (Dr. Dhaval Patel) -> github.com/drdhaval2785/sanskritworld_texts dump). shiva-sutras/NOTICE.md separately cites the same drdhaval2785 source for its own corpus layer -- the two NOTICE files were written independently and have not been cross-checked against each other.")
+    (description . "Verify shiva-sutras/NOTICE.md's description of this corpus's provenance/license matches this repo's own NOTICE.md exactly (same source chain, no drift in attribution). Flag any mismatch for the owner rather than silently editing either file -- provenance records are not to be reconciled by inference.")
+    (done . ())
+  ))
+)))
